@@ -552,6 +552,8 @@ transition: all 0.3s linear;
 border-radius: 50px;
 display: flex;
 flex-direction: column;
+justify-content: center;
+align-items: center;
     a, i{
     transition: all 0.3s linear;
     z-index: 1;
@@ -937,7 +939,7 @@ width: 50%;
 }
 .desk-technical__content:last-child{
 display: flex;
-justify-content: end;
+justify-content: flex-end;
 }
 .desk-technical__img{
 object-fit: cover;
@@ -1197,6 +1199,10 @@ margin: 80px 100px 0 0;
     font-family: @roboto;
     font-size: 15px;
     }
+}
+.slick-prev, .slick-next{
+width: auto;
+height: auto;
 }
 .desk-agency__slide{
     .slick-prev:before, 
@@ -2547,6 +2553,9 @@ display: none;
     top: -14px;
     left: 49%;
     transform: translateX(-49%);
+    }
+    .desk-brochure__container{
+    padding-bottom: 70px;
     }
 }
 @media screen and (max-width: 800px){
